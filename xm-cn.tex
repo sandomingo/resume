@@ -1,0 +1,134 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+% \widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+  
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+\firstname{宣明}
+\familyname{}
+\title{}               % optional, remove the line if not wanted
+
+\mobile{15876541030}                    % optional, remove the line if not wanted
+\email{whyzxm@gmail.com}                      % optional, remove the line if not wanted
+%% \quote{\small{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}}
+
+\nopagenumbers{}
+
+\begin{document}
+\maketitle
+
+\section{教育}
+\cventry{2013至今}{硕士}{中山大学软件学院，导师：徐亚波}{将于 2014 年毕业}{}{}
+\cventry{2009--2013}{本科}{中山大学软件学院}{}{}{}  
+
+\section{实习经历}
+\cventry{2012至今}{广州一找网络科技有限公司实习生}{}{}{}{负责数据分析，网页爬虫信息抽取工作以及部分公用库的维护}
+
+\section{社区}
+\cventry{博客}{\url{sandomingo.github.io}}{技术博客}{}{}{}
+\cventry{微博}{@我们爱单车}{公众微博}{}{}{}
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2014至今}
+{Hound}
+{Java 算法}
+{实习项目}{}
+{人才搜索引擎，负责多源数据融合策略，异构网页信息抽取，文本中关键信息抽取等工作}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014至今}
+{Crawler-Template}
+{Java XML}
+{实习项目}{}
+{提供基于XPath的爬虫页面抽取策略，负责该策略的优化，致力于减少人工干预}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014至今}
+{yz-commons-cluster}
+{Java 算法 RPC}
+{实习项目}{}
+{一个基于词向量余弦相似度计算的分布式通用文本聚类服务，目前正致力于提高该服务的日处理量}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014}
+{yz-commons-classifier}
+{Java 算法 RPC}
+{实习项目}{}
+{通用的文本分类器服务，提供了文本所属领域分类，是否为广告判别，文本情感判别等服务，负责算法调优}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014}
+{SelectKeywords}
+{Python}
+{独立项目}{}
+{为基于关键词匹配的分类算法提供基于语料的优质关键词，主要应用在语料不足的场景下，并减少人工筛选的工作量}
+
+\vspace*{0.2\baselineskip}
+\cventry{2013}
+{Racoon}
+{Linux Java Hadoop HBase SocketProgramming NFS}
+{实习项目}{}
+{一个从零开始的大数据分析项目，负责搭建开发环境，数据获取，以及数据清洗的工作}
+
+\vspace*{0.2\baselineskip}
+\cventry{2013}
+{新浪微博恶意账号检测}
+{JAVA 算法}
+{实习项目}{}
+{分析新浪微博用户的账户行为，识别出真人操作的账号和机器操作的账号}
+
+\vspace*{0.2\baselineskip}
+\cventry{2013}
+{新浪微博用户年龄预测}
+{JAVA 算法}
+{实习项目}{}
+{分析新浪微博用户的个人信息和微博内容，预测用户年龄}
+
+\vspace*{0.2\baselineskip}
+\cventry{2012--2013}
+{Owl}
+{Java Zookeeper}
+{实习项目}{}
+{内部服务监控系统，负责日常维护，开发了邮件预警功能，将数据存储从zookeeper更换为MySQL}
+
+
+\renewcommand{\baselinestretch}{1.0}
+
+\section{发表论文}
+\cventry{2013}
+{\textnormal{Yueguo Chen, Lexi Gao, } Xuan Ming\textnormal{,Weining Qian, Yabo Xu}}
+{Overview of the WISE 2013 Challenge}{Web Information Systems Engineering–WISE 2013 }
+{}{}{}
+
+\section{奖项}
+\cventry{2010,2011}{中山大学三等奖学金}{}{}{}{}
+\cventry{2011}{中山大学院系龙舟赛第二名}{}{}{}{}
+\cventry{2010}{广州亚残会~志愿者先进个人}{}{}{}{}
+
+\section{技能}
+\cventry{语言}{Java > Python > C++ > C}{}{}{}{}
+\cventry{兴趣}{单车（2010 广州消防首届自行车绿道马拉松100KM赛程 山地车组 3小时40分钟完赛）}{}{}{}{}
+\cventry{英语}{CET-6 546 分}{具备基本的英语读写能力}{}{}{}
+
+\closesection{}                   % needed to renewcommands
+
+\end{document}

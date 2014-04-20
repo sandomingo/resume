@@ -1,0 +1,128 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Ming}
+\familyname{Xuan}
+\title{Curriculum Vitae}
+\mobile{+86 18621265857}
+\email{whyzxm@gmail.com}
+%% \quote{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}
+
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2013--Present}{MS in Software Engineering, Supervisor: Yabo Xu Chen}{School of Software, Sun Yat-Sen University}{expected 2015}{}{}
+\cventry{2009--2013}{BA in Software Engineering}{School of Software, Sun Yat-Sen University}{}{}{}
+
+\section{Internship}
+\cventry{2012--present}{Intern at Summba Inc.}{Research \& Develop Engineer}{}{}{}
+
+\section{Community}
+\cventry{Blog}{\url{sandomingo.github.io}}{My blog (Chinese)}{}{}{}
+\cventry{Weibo}{@welovecycling}{Public Account}{}{}{}
+
+\section{Project Experience}
+%% \subsection{Research Projects}
+
+\cventry{2014--present}
+{Hound}
+{Java Algorithm}
+{Intern Project}{}
+{
+Hound is a telents search engine. In this project, I'm responsible for the multi-source data incorporation, information extraction from heterogeneous websites and name entity recognition from text.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014--present}
+{Crawler-Template}
+{Java XML}
+{Intern Project}{}
+{The project aimed to provide an extract strategy for crawler based on XPATH. I'm responsible for the strategy optimization to reduce manual intervention.}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014--present}
+{Commons-Cluster}
+{Java Algorithm RPC}
+{Intern Project}{}
+{A common distributed document cluster service based on word vector cosine similarities. I'm now major in applying Locality Sensitive Hashing to improve the service's daily throughput.}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014}
+{Commons-Classifier}
+{Java Algorithm RPC}
+{Intern Project}{}
+{A common document classification service. We provide document category prediction, judge whether it's an advertisement and analyse it's sentiment. I'm responsible for the algorithm tuning.}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014}
+{Select-Keywords}
+{Python}
+{Independent Project}{}
+{The project is developed to select high quality category keywords for those classification algorithm which are based on word matching. It works well when we don't have much corpus and relief the review task.}
+
+\vspace*{0.2\baselineskip}
+\cventry{2013}
+{Racoon}
+{Linux Java Hadoop HBase Socket NFS}
+{Intern Project}{}
+{We build up the project from nothing. In this data analyze project, I'm responsible for setup develop environemnt, fetching data from multi-source and the ETL task.}
+
+\vspace*{0.2\baselineskip}
+\cventry{2013}
+{Sina weibo Spam Account Detection}
+{JAVA Algorithm}
+{Intern Project}{}
+{Analyse weibo users' account to judge whether an account is manipulated by a real man or a machine.}
+
+\vspace*{0.2\baselineskip}
+\cventry{2013}
+{Sina weibo User Age Prediction}
+{JAVA Algorithm}
+{Intern Project}{}
+{Analyse weibo users' account info and weibo content to predict his age.}
+
+\vspace*{0.2\baselineskip}
+\cventry{2012--2013}
+{Owl}
+{Java Zookeeper}
+{Intern Project}{}
+{Owl is a services monitor system. I'm responsible for the daily maintaining. I developed the email alert mechanism in case of some service is no longger available. I also migrated the job data from zookeeper to MySQL to enhance the system's performance.}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\section{Publications}
+\cventry{2013}
+{\textnormal{Yueguo Chen, Lexi Gao, }Xuan Ming\textnormal{, Weining Qian, Yabo Xu}}
+{Overview of the WISE 2013 Challenge}{Web Information Systems Engineering–WISE 2013}
+{}{}{}
+
+\section{Awards}
+\cventry{2010,2011}{Third Grade Scholarship}{}{}{}{}
+\cventry{2011}{Second place in Sun Yat-Sen University Dragon Boat College Competition}{}{}{}{}
+\cventry{2010}{Outstanding Volunteer in Asian Para Games}{}{}{}{}
+
+\section{Skills}
+\cventry{Languages}{Java > Python > C++ > C}{}{}{}{}
+\cventry{Interest}{Cycling}{2010 Guangzhou Fire Station the First Bike Greenway Marathon, 100KM MTB, finished in 3 hr 40 min}{}{}{}
+%% \cventry{Application Dev}{Ruby on Rails, iOS development}{}{}{}{}
+\cventry{English}{CET-6 546}{Have the ability in spoken and written English}{}{}{}
+
+
+\closesection{}                   % needed to renewcommands
+
+\end{document}
